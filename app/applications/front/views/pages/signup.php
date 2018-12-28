@@ -2,6 +2,17 @@
 require ("includes/header.php");
 ?>
 
+<style>
+
+.login-container{
+  background-color: rgba(0,0,0,0.2);
+  padding:20px;
+  border-radius: 10px
+
+ }
+
+</style>
+
         <section id="home" class="hero">
             <div class="hero-bg"></div>
 
@@ -14,13 +25,13 @@ require ("includes/header.php");
 
                     <div class="col-md-6 col-xs-12 col-sm-6">
 
-                        <div class="hero-text">
+                        <div class="hero-text login-container">
 
                             <h3 style="color:#fff">Sign Up For an Account</h3>
-                             <form>
+                             <form method="post">
                             <p> 
                                
-                                  <table>
+                                  <table cellpadding="5">
                                   	  <tr>
                                         <td><input type=text class="form-control" placeholder="Name or Company Name"></td>
                                     </tr>
@@ -36,7 +47,7 @@ require ("includes/header.php");
 
                             </p>
 
-                            <a href="#" class="btn btn-white">Get started</a>
+                            <button  class="btn btn-white">Create Account</button>
 
                              </form>
 
