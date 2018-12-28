@@ -1,7 +1,14 @@
 <?php
 require "includes/header.php";
 ?>
-
+<style>
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active.active {
+    color: #495057;
+    background-color: #fff;
+    border:none !important;
+    border-color: #fff !important;
+}
+</style>
         <section id="home" class="hero">
             <div class="hero-bg"></div>
 
@@ -54,7 +61,9 @@ require "includes/header.php";
                 <div class="row">
 
                     <div class="col-lg-6 col-md-6 col-xs-12">
-                 <a href="<?= URLROOT ?>/front/pages/drugdivision">
+                    <ul class="nav nav-tabs" role="tablist" >
+                    <li class="nav-item" >
+                    <a class="nav-link active" href="#drug" role="tab" data-toggle="tab" >
                         <div class="row">
 
                             <div class="col-md-12 col-lg-12 col-xs-12">
@@ -69,7 +78,7 @@ require "includes/header.php";
                                     </div>
 
                                     <div class="icon-content">
-                                        <p style="color:#8888B4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
                                     </div>
 
                                 </div>
@@ -78,14 +87,12 @@ require "includes/header.php";
 
                             </div>
                         </div>
-                     
                         </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#food" role="tab" data-toggle="tab" >
 
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-xs-12">
-                    <a href="<?= URLROOT ?>/front/pages/fooddivision">
-                    <div class='row'>
+                        <div class='row'>
                             <div class="col-md-12 col-lg-12 col-xs-12">
                                 <div class="icon-app mg-bt-0">
 
@@ -96,7 +103,7 @@ require "includes/header.php";
                                     </div>
 
                                     <div class="icon-content">
-                                        <p style="color:#8888B4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
                                     </div>
 
                                 </div>
@@ -104,7 +111,40 @@ require "includes/header.php";
 
                             </div>
                             </div>
-                </a>
+                            </li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="tab-content">
+
+                    <div role="tabpanel" class="tab-pane  active" id="drug">
+                        <h2 class="title-h2">Drug Division</h2>
+                        <h3 class="title-h3">Take Control of your funds</h3>
+
+                        <p class="font-p">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                        <p class="font-p mg-bt-30">
+                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
+
+                                <a href="#" class="btn btn-color">Get started</a>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="food">
+                        <h2 class="title-h2">Food Division</h2>
+                        <h3 class="title-h3">Take Control of your funds</h3>
+
+                        <p class="font-p">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                        <p class="font-p mg-bt-30">
+                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
+
+                                <a href="#" class="btn btn-color">Get started</a>
+
+                    </div>
+                    </div>
                     </div>
 
 

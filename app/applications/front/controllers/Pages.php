@@ -54,6 +54,14 @@ class Pages extends Controller {
 
         $this->view('pages/login');
     }
+    public function fooddivision(){
+
+        $this->view('pages/fooddivision');
+    }
+    public function drugdivision(){
+
+        $this->view('pages/drugdivision');
+    }
 
     
  

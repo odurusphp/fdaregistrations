@@ -91,20 +91,20 @@
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a data-scroll="" class="nav-link section-scroll" href="#home">Home</a>
+                                <a data-scroll="" class="nav-link section-scroll" href="<?= URLROOT?>/front/pages">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a data-scroll="" class="nav-link section-scroll" href="#about-p">About</a>
+                                <a data-scroll="" class="nav-link section-scroll" href="<?= URLROOT?>/front/pages#about-p">About</a>
                             </li>
 
                             <li class="nav-item">
-                                <a data-scroll="" class="nav-link section-scroll" href="#features">Registrations</a>
+                                <a data-scroll="" class="nav-link section-scroll" href="<?= URLROOT?>/front/pages#features">Registrations</a>
                             </li>
                             <li class="nav-item">
-                                <a data-scroll="" class="nav-link section-scroll" href="#pricing">Renewals</a>
+                                <a data-scroll="" class="nav-link section-scroll" href="<?= URLROOT?>/front/pages#pricing">Renewals</a>
                             </li>
                             <li>
-                                <a data-scroll="" href="#testimonials" class="nav-link section-scroll">Contact Us</a>
+                                <a data-scroll="" href="<?= URLROOT?>/front/pages#testimonials" class="nav-link section-scroll">Contact Us</a>
                             </li>
                          
 
