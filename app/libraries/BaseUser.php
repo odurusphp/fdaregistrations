@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bryan
- * Date: 2/23/2018
- * Time: 12:05 PM
- */
 
 class BaseUser extends tableDataObject {
 	const TABLENAME = 'users';

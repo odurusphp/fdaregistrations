@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: cassie
- * Date: 8/1/18
- * Time: 10:49 AM
- */
-
 class Pages extends PostController {
 
     

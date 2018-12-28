@@ -18,7 +18,7 @@
 
 
                             <div class="logo-footer">
-                                <img src="<?= URLROOT?>/front/images/logo.png" alt="">
+                                <img src="<?= URLROOT?>/front/images/fda-1.png" alt="">
 
                             </div>
                             <div class="text-footer">
@@ -57,24 +57,22 @@
                             <h5>Menu</h5>
 
                             <ul class="list-menu">
-                                <li>
-                                    <a href="#">Home </a>
-                                </li>
+                            <li >
+                                <a  href="<?= URLROOT?>/front/pages">Home</a>
+                            </li>
+                            <li >
+                                <a  href="<?= URLROOT?>/front/pages#about-p">About</a>
+                            </li>
 
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Features</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pricing</a>
-                                </li>
+                            <li>
+                                <a  href="<?= URLROOT?>/front/pages#features">Registrations</a>
+                            </li>
+                            <li >
+                                <a href="<?= URLROOT?>/front/pages#pricing">Renewals</a>
+                            </li>
+                            <li>
+                                <a  href="<?= URLROOT?>/front/pages#testimonials">Contact Us</a>
+                            </li>
 
 
                             </ul>
