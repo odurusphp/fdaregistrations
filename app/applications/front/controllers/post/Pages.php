@@ -14,7 +14,7 @@ class Pages extends PostController {
                 exit();
             }
            else if($this->loggedInUser->hasRole('Regular')){
-                Redirecting::location('backoffice/pages/applicant');
+                Redirecting::location('backoffice/pages/');
                 exit();
             }
             elseif($this->loggedInUser->hasRole('Food')){
