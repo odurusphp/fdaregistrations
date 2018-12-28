@@ -6,24 +6,24 @@ class Customer extends tableDataObject{
     const TABLENAME = 'basicinformation';
 
     public static function getAllCustomers(){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select  basicinformation.firstname,
         basicinformation.lastname, basicinformation.phone,
         users.email, users.datecreated
         from basicinformation inner join users  on
         basicinformation.uid  = users.uid ";
 
-         $realestatedb->prepare($getrecords);
-         $realestatedb->execute();
-        return $realestatedb->resultSet();
+         $fdadb->prepare($getrecords);
+         $fdadb->execute();
+        return $fdadb->resultSet();
     }
 
     public static function getCustomerByUserId($uid){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select * from basicinformation where uid = '$uid' ";
-        $realestatedb->prepare($getrecords);
-        $realestatedb->execute();
-        return $realestatedb->singleRecord();
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->singleRecord();
     }
 
 

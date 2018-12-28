@@ -6,12 +6,12 @@ class ServicesData extends tableDataObject{
     const TABLENAME = 'services';
 
     public static  function getServices(){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select * from services";
     
-        $realestatedb->prepare($getrecords);
-        $realestatedb->execute();
-        return $realestatedb->resultSet();
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->resultSet();
     }
 
 

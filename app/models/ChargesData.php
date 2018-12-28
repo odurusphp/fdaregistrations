@@ -6,12 +6,12 @@ class ChargesData extends tableDataObject{
     const TABLENAME = 'taxes';
 
     public static  function getCharges(){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select * from taxes";
     
-        $realestatedb->prepare($getrecords);
-        $realestatedb->execute();
-        return $realestatedb->resultSet();
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->resultSet();
     }
 
 

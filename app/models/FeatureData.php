@@ -6,12 +6,12 @@ class FeatureData extends tableDataObject{
     const TABLENAME = 'features';
 
     public static  function getfeatures(){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select * from features";
     
-        $realestatedb->prepare($getrecords);
-        $realestatedb->execute();
-        return $realestatedb->resultSet();
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->resultSet();
     }
 
 

@@ -5,21 +5,21 @@ class Products extends tableDataObject{
   const TABLENAME = 'products';
 
   public static function listproducts($productid = null){
-      global $realestatedb;
+      global $fdadb;
       $stmt = $productid == null ? '' : 'where productid='.$productid;
       $getrecords = "SELECT * from products inner join category on category.catid = products.catid $stmt  ";
-      $realestatedb->prepare($getrecords);
-      $realestatedb->execute();
-      return $realestatedb->resultSet();
+      $fdadb->prepare($getrecords);
+      $fdadb->execute();
+      return $fdadb->resultSet();
   }
 
   public static function listproductsbyProductid($productid){
-      global $realestatedb;
+      global $fdadb;
       $stmt = 'where productid='.$productid;
       $getrecords = "SELECT * from products inner join category on category.catid = products.catid $stmt  ";
-      $realestatedb->prepare($getrecords);
-      $realestatedb->execute();
-      return $realestatedb->singleRecord();
+      $fdadb->prepare($getrecords);
+      $fdadb->execute();
+      return $fdadb->singleRecord();
   }
 
 }

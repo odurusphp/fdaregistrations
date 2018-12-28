@@ -6,11 +6,11 @@ class Basicinformation extends tableDataObject{
     const TABLENAME = 'basicinformation';
 
      public static function getBasicid($uid){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select basicid from basicinformation where uid = $uid ";
-        $realestatedb->prepare($getrecords);
-        $realestatedb->execute();
-        return $realestatedb->singleRecord();
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->singleRecord();
     }
 
 

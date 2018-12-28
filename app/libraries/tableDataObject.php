@@ -118,7 +118,7 @@ class tableDataObject{
      * @throws frameworkError
      */
     public static function getRecordByParams($table, $conditions,$returnarray = false){
-        global $realestatedb;
+        global $fdadb;
 
         if(!is_array($conditions)){
             throw new frameworkError("Error: conditions for finding an object must be a key => value pair array");
@@ -129,18 +129,18 @@ class tableDataObject{
         }
         $wherec = implode(" and ", $prewhere);
 
-        $realestatedb->prepare(
+        $fdadb->prepare(
             "select * from $table where $wherec"
         );
         foreach ($conditions as $cfield => $cvalue){
-            $realestatedb->bind(":$cfield", $cvalue);
+            $fdadb->bind(":$cfield", $cvalue);
         }
 
         // get the information from the child class and the table
         $objClass = get_called_class();
         $tableinfo = self::getTableInfo($table);
         $primaryKey = $tableinfo->primaryKey;
-        $rowbyparam = $realestatedb->resultSet();
+        $rowbyparam = $fdadb->resultSet();
 
         if(count($rowbyparam) ==0){
             /* TODO - this is a bug waiting to happen. Need to figure out
@@ -179,9 +179,9 @@ class tableDataObject{
         $tablename = $child::TABLENAME;
         $tableinfo = self::getTableInfo($tablename);
 
-        global $realestatedb;
-        $realestatedb->prepare("select count(*) as recordcount from $tablename");
-        $getcount = $realestatedb->fetchColumn();
+        global $fdadb;
+        $fdadb->prepare("select count(*) as recordcount from $tablename");
+        $getcount = $fdadb->fetchColumn();
         return $getcount;
     }
 
@@ -222,17 +222,17 @@ class tableDataObject{
         $tablename = $child::TABLENAME;
         $tableinfo = self::getTableInfo($tablename);
 
-        global $realestatedb;
+        global $fdadb;
         if($clausearray == null){
-        $realestatedb->prepare("select * from $tablename order by $tableinfo->primaryKey");
+        $fdadb->prepare("select * from $tablename order by $tableinfo->primaryKey");
         }else{
-           $realestatedb->prepare("select * from $tablename $clausequery");
+           $fdadb->prepare("select * from $tablename $clausequery");
         }
 
         if (!$createObjects){
-        	$results = $realestatedb->resultSet();
+        	$results = $fdadb->resultSet();
         } else {
-        	foreach ($realestatedb->resultSet() as $resultrecord){
+        	foreach ($fdadb->resultSet() as $resultrecord){
         		$results[] = new $objClass($resultrecord->$primaryKey);
 	        }
         }
@@ -246,7 +246,7 @@ class tableDataObject{
      * @throws frameworkError
      */
     public function store($forcenulls = false){
-        global $realestatedb;
+        global $fdadb;
         // grabbing the value of the primaryKey property just for clarity using it as a dynamic property of recordObject
         $pk = $this->primaryKey;
         if(!isset($this->tableName) || !isset($this->recordObject)){
@@ -317,7 +317,7 @@ class tableDataObject{
             $ifields = implode(",",$fields);
             $ibinders = implode(",",$binders);
             $pqry = "insert into $this->tableName ($ifields) values ($ibinders)";
-            $realestatedb->prepare($pqry);
+            $fdadb->prepare($pqry);
         } else {
             $mode = 'update';
 
@@ -335,7 +335,7 @@ class tableDataObject{
              * TODO - bind the where clause properly.
              */
             $pqry = "update $this->tableName set $isetters where $pk = '" . $this->recordObject->$pk ."'";
-            $realestatedb->prepare($pqry);
+            $fdadb->prepare($pqry);
         }
         /*
          * Now again the following code is the same whether we are doing an insert or an update.
@@ -343,12 +343,12 @@ class tableDataObject{
          */
         for ($fcount = 0; $fcount < count($fields); $fcount++) {
             if (isset($values[$fcount])) {
-                $realestatedb->bind($binders[$fcount], $values[$fcount]);
+                $fdadb->bind($binders[$fcount], $values[$fcount]);
             }
         }
-        if ($realestatedb->execute()){
+        if ($fdadb->execute()){
             if($mode == 'insert'){
-                $this->recordObject->$pk = $realestatedb->lastInsertId();
+                $this->recordObject->$pk = $fdadb->lastInsertId();
             }
             return $this;
         } else {
@@ -367,14 +367,14 @@ class tableDataObject{
      * @throws frameworkError
      */
     public function deleteFromDB(){
-    	global $realestatedb;
+    	global $fdadb;
     	$tablename = $this->tableName;
     	$pk = $this->primaryKey;
     	$pkval = $this->recordObject->$pk;
 
     	$delsql = "delete from $tablename where $pk = '$pkval'";
-    	$realestatedb->prepare($delsql);
-    	if($realestatedb->execute()){
+    	$fdadb->prepare($delsql);
+    	if($fdadb->execute()){
     		foreach($this as $property => $value){
     			unset($this->$property);
 		    }

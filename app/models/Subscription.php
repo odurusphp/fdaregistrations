@@ -7,19 +7,19 @@ class Subscription extends tableDataObject{
 
 
     public static  function getSubscriptions(){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select * from subscriptions";
     
-        $realestatedb->prepare($getrecords);
-        $realestatedb->execute();
-        return $realestatedb->resultSet();
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->resultSet();
     }
 
     // public static function checkUserExist($email){
-    //     global $realestatedb;
+    //     global $fdadb;
 	// 	$getusercount = "select count(*) as usercount from users where email  = '$email'  ";
-	// 	$count = $realestatedb->prepare($getusercount);
-	// 	$usercount = $realestatedb->fetchColumn();
+	// 	$count = $fdadb->prepare($getusercount);
+	// 	$usercount = $fdadb->fetchColumn();
 	// 	return $usercount;
 	// }
 

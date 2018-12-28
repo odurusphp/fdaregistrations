@@ -13,47 +13,47 @@ class User extends tableDataObject{
     }
 
     public static  function getUsers(){
-        global $realestatedb;
+        global $fdadb;
         $getrecords = "select * from users";
 
-         $realestatedb->prepare($getrecords);
-         $realestatedb->execute();
-         return $realestatedb->resultSet();
+         $fdadb->prepare($getrecords);
+         $fdadb->execute();
+         return $fdadb->resultSet();
     }
 
     public static function checkUserExist($email){
-    global $realestatedb;
+    global $fdadb;
 		$getusercount = "select count(*) as usercount from users where email  = '$email'  ";
-		$count = $realestatedb->prepare($getusercount);
-		$usercount = $realestatedb->fetchColumn();
+		$count = $fdadb->prepare($getusercount);
+		$usercount = $fdadb->fetchColumn();
 		return $usercount;
 	  }
 
     public static function getUserBasicid($uid){
-    global $realestatedb;
+    global $fdadb;
     $getusercount = "select basicinformation.basicid from basicinformation inner join users
     on basicinformation.uid = users.uid  where users.uid  = $uid  ";
-    $basicid = $realestatedb->prepare($getusercount);
-    $basicid = $realestatedb->fetchColumn();
+    $basicid = $fdadb->prepare($getusercount);
+    $basicid = $fdadb->fetchColumn();
     return $basicid;
     }
 
     public static function login_user($email, $password){
-       global $realestatedb;
+       global $fdadb;
         $password  = self::encryptPassword($password);
         $getusercount = "select count(*) as count from users  where (email  = '$email'  and password = '$password')
          and accesslevel = '2' ";
-        $count = $realestatedb->prepare($getusercount);
-        $usercount = $realestatedb->fetchColumn();
+        $count = $fdadb->prepare($getusercount);
+        $usercount = $fdadb->fetchColumn();
         return $usercount;
      }
 
 
     public static function login_user_object($email){
-       global $realestatedb;
+       global $fdadb;
         $getuser = "select * from users  where email = '$email' and accesslevel = '2'  ";
-        $realestatedb->prepare($getuser);
-        return $realestatedb->singleRecord();
+        $fdadb->prepare($getuser);
+        return $fdadb->singleRecord();
      }
 
 }
