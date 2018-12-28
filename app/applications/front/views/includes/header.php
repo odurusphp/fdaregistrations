@@ -80,7 +80,7 @@
 
         <header class="navbar-header">
 
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav style=" background-color: #737AFC;" class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
 
                     <a class="navbar-brand" href="#"><img src="<?= URLROOT?>/front/images/fda-1.png" alt=""></a>

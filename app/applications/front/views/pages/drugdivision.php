@@ -2,48 +2,11 @@
 require "includes/header.php";
 ?>
 
-        <section id="home" class="hero">
-            <div class="hero-bg"></div>
-
-            <!--container-->
-
-            <div class="container">
-
-                <div class="row hero-padd">
-
-
-                    <div class="col-md-6 col-xs-12 col-sm-6">
-
-                        <div class="hero-text">
-
-                            <h2>Build a better workplace for your customer</h2>
-
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore.</p>
-
-                            <a href="#" class="btn btn-white">Get started</a>
-
-
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-6 col-xs-12 col-sm-6">
-
-                        <img src="<?=URLROOT?>/front/images/image1.svg" alt="">
-
-
-                    </div>
-
-
-                </div>
-            </div>
-            <!--container-->
-
-        </section>
+      
 
 
         <!--About-->
-
+    <br>
 
         <section id="features" class="padd-80">
 
@@ -65,11 +28,10 @@ require "includes/header.php";
 
 
                                     <div class="icon-header">
-                                        <h3>Drug Division</h3>
+                                        <h3>APPLICATION FOR FOOD HYGIEN PERMIT</h3>
                                     </div>
 
                                     <div class="icon-content">
-                                        <p style="color:#8888B4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
                                     </div>
 
                                 </div>
@@ -92,11 +54,10 @@ require "includes/header.php";
                                     <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""> </div>
 
                                     <div class="icon-header">
-                                        <h3>Food Division</h3>
+                                        <h3>APPLICATION FOR FOOD IMPORTER REGISTRATION FORMS</h3>
                                     </div>
 
                                     <div class="icon-content">
-                                        <p style="color:#8888B4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
                                     </div>
 
                                 </div>
@@ -105,10 +66,205 @@ require "includes/header.php";
                             </div>
                             </div>
                 </a>
-                    </div>
-
-
                 </div>
+                </div>
+                <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/drugdivision">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+
+                        <div class="icon-app">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""></div>
+
+
+                            <div class="icon-header">
+                                <h3>APPLICATION FOR LICENSING OF FOOD MAUFACTURING</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/fooddivision">
+            <div class='row'>
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+                        <div class="icon-app mg-bt-0">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""> </div>
+
+                            <div class="icon-header">
+                                <h3>APPLICATION FOR THE REGISTRATION OF FOOD PRODUCT</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    </div>
+            </a>
+            </div>
+            </div>
+            <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/drugdivision">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+
+                        <div class="icon-app">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""></div>
+
+
+                            <div class="icon-header">
+                                <h3>APPLICATION FOR THE REGISTRATION OF FOOD PRODUCT-imported-5</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/fooddivision">
+            <div class='row'>
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+                        <div class="icon-app mg-bt-0">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""> </div>
+
+                            <div class="icon-header">
+                                <h3>APPLICATION FOR WAREHOUSE LICENSING FORMS</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    </div>
+            </a>
+            </div>
+            </div>
+            <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/drugdivision">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+
+                        <div class="icon-app">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""></div>
+
+
+                            <div class="icon-header">
+                                <h3>COLD STORAGE FACILITY LICENSING FORM</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/fooddivision">
+            <div class='row'>
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+                        <div class="icon-app mg-bt-0">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""> </div>
+
+                            <div class="icon-header">
+                                <h3>FOODBORNE ILNNESS REPORTING FORM REVIEW</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    </div>
+            </a>
+            </div>
+            </div>
+            <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+            <a href="<?= URLROOT ?>/front/pages/drugdivision">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+
+                        <div class="icon-app">
+
+                            <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""></div>
+
+
+                            <div class="icon-header">
+                                <h3>outbreak investigation forms</h3>
+                            </div>
+
+                            <div class="icon-content">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+          
+            </div>
+            </div>
             </div>
 
         </section>

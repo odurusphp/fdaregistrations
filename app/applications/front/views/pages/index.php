@@ -53,25 +53,32 @@ require "includes/header.php";
 
                 <div class="row">
 
-                    <div class="col-lg-6 col-md-6 col-xs-12">
-                 <a href="<?= URLROOT ?>/front/pages/drugdivision">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                 <a href="#">
                         <div class="row">
 
                             <div class="col-md-12 col-lg-12 col-xs-12">
 
                                 <div class="icon-app">
 
-                                    <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""></div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""></div>
 
 
                                     <div class="icon-header">
-                                        <h3>Drug Division</h3>
+                                        <h3>Food Division</h3>
                                     </div>
 
-                                    <div class="icon-content">
-                                        <p style="color:#8888B4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-                                    </div>
-
+                                    <ul class="list-group">
+                                    <li class="list-group-item">FOODBORNE ILLNNESS REPORTING FORM REVIEW</li>
+                                    <li class="list-group-item">FOODBORNE DISEASE OUTBREAK INVESTIGATION FORM</li>
+                                    <li class="list-group-item">FOOD HYGIENE PERMIT</li>
+                                    <li class="list-group-item">FOOD IMPORTER REGISTRATION FORMS</li>
+                                    <li class="list-group-item">LICENSING OF FOOD MANUFACTURING</li>
+                                    <li class="list-group-item">REGISTRATION OF  FOOD PRODUCT</li>
+                                    <li class="list-group-item">REGISTRATION OF IMPORTED FOOD PRODUCT</li>
+                                    <li class="list-group-item">WAREHOUSE LICENSING FORMS</li>
+                                    <li class="list-group-item">COLD STORAGE FACILITY LICENSING FORM</li>
+                                    </ul>
                                 </div>
 
 
@@ -82,22 +89,57 @@ require "includes/header.php";
                         </a>
 
                     </div>
-
-                    <div class="col-lg-6 col-md-6 col-xs-12">
-                    <a href="<?= URLROOT ?>/front/pages/fooddivision">
+</div>
+<div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                    <a href="#">
                     <div class='row'>
                             <div class="col-md-12 col-lg-12 col-xs-12">
                                 <div class="icon-app mg-bt-0">
 
-                                    <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""> </div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""> </div>
 
                                     <div class="icon-header">
-                                        <h3>Food Division</h3>
+                                        <h3>Drugs Division</h3>
                                     </div>
 
-                                    <div class="icon-content">
-                                        <p style="color:#8888B4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-                                    </div>
+                                    <ul class="list-group">
+                                    <li class="list-group-item">ALLOPATHIC DRUG CTD FORMAT</li>
+                                    <li class="list-group-item">ADVERTISEMENT OF DRUGS AND OTHER REGULATED PRODUCTS</li>
+                                    <li class="list-group-item">AUTHORIZED PERSONS IN PHARMA & CHEMICAL INDUSTRY</li>
+                                    <li class="list-group-item">COSMETICS</li>
+                                    <li class="list-group-item">DISPOSAL OF EXPIRED,DETERIORATED DRUGS, COSMETICS, HOUSEHOLD CHEMICAL SUBSTANCES OR MEDICAL DEVICE</li>
+                                    <li class="list-group-item">FOOD,DIETARY , NUTRITIONAL SUPPLEMENT</li>
+                                    <li class="list-group-item">HOUSEHOLD CHEMICAL SUBSTANCE</li>
+                                    <li class="list-group-item">REGISTRATION AS AN IMPORTER OF TOBACCO PRODUCT</li>
+                                    <li class="list-group-item">REGISTRATION OF TOBACCO PRODUCT</li>
+                                    <li class="list-group-item">LABELLING OF PRODUCTS</li>
+                                    <li class="list-group-item">LICENSE TO MANUFACTURE DRUGS, COSMETICS, HOUSEHOLD CHEMICAL SUBSTANCES AND MEDICAL DEVICES</li>
+                                    <li class="list-group-item">LICENSING OF STORAGE FACILITIES OF IMPORTERS, EXPORTERS, WHOLESALERS AND DISTRIBUTORS OF FINISHED PHARMACEUTICAL PRODUCTS, BIOLOGICAL PRODUCTS, HERBAL MEDICINES, FOOD SUPPLEMENTS AND PHARMACEUTICAL RAW MATERIALS</li>
+                                    <li class="list-group-item">LICENSE AS AN IMPORTER OF COSMETICS AND HOUSEHOLD CHEMICAL SUBSTANCES</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR LICENSE AS AN IMPORTER OF MEDICAL DEVICES</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR THE REGISTRATION OF DIAPERS (BABY & ADULT), SANITARY PADS AND MOP-UP TOWELS</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR THE REGISTRATION OF CLASS I MEDICAL DEVICES</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR THE REGISTRATION OF CLASSES II–IV MEDICAL DEVICES</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR BLOOD FACILITY PRODUCTS LISTING IN GHANA</li>
+                                    <li class="list-group-item">APPLICATION TO REGISTER AS AN IMPORTER OF BIOLOGICAL PRODUCTS</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR LICENSING BLOOD FACILITIES IN GHANA</li>
+                                    <li class="list-group-item">APPLICATION FORM FOR VARIATIONS TO A BIOLOGICAL PRODUCT</li>
+                                    <li class="list-group-item">REGISTRATION AS IMPORTER  OF FINISHED PHARMACEUTICAL PRODUCTS, BIOLOGICAL PRODUCTS, HERBAL MEDICINES, FOOD SUPPLEMENTS AND PHARMACEUTICAL RAW MATERIALS</li>
+                                    <li class="list-group-item">REGISTRATION APPLICATION FORM FOR BIOSIMILAR PRODUCTS</li>
+                                    <li class="list-group-item">REGISTRATION APPLICATION FORM FOR VACCINES</li>
+                                    <li class="list-group-item">REGISTRATION RENEWAL APPLICATION FORM FOR BIOSIMILAR PRODUCTS</li>
+                                    <li class="list-group-item">REGISTRATION APPLICATION FORM FOR INNOVATOR BIOLOGICAL PRODUCTS</li>
+                                    <li class="list-group-item">REGISTRATION RENEWAL APPLICATION FORM FOR INNOVATOR BIOLOGICAL PRODUCTS</li>
+                                    <li class="list-group-item">REGISTRATION RENEWAL APPLICATION FORM FOR VACCINES</li>
+                                    <li class="list-group-item">RENEWAL OF LICENSE FOR THE MANUFACTURE OF DRUGS, COSMETICS, MEDICAL DEVICES AND HOUSEHOLD CHEMICAL SUBSTANCES</li>
+                                    <li class="list-group-item">HERBAL MEDICINAL PRODUCT</li>
+                                    <li class="list-group-item">HOMEOPATHIC MEDICINES</li>
+                                    <li class="list-group-item">VARIATION</li>
+                                    <li class="list-group-item">VETERINARY SUPPLEMENT APPLICATION</li>
+                                    <li class="list-group-item">VETERINARY DRUG APPLICATION</li>
+
+                                </ul>
 
                                 </div>
 
