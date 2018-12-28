@@ -5,6 +5,7 @@ require_once 'config/config.php';
 require_once 'config/config_env.php';
 require_once 'helpers/email_helper.php';
 require_once 'helpers/excel_helper.php';
+require_once 'helpers/simple_encrypt.php';
 
 if(DEVMODE === true){
     require('helpers/devhelpers.php');

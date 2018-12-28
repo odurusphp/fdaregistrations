@@ -81,4 +81,38 @@ class Pages extends PostController {
             $this->dispatch();
         }
     }
+    public function forgot(){
+        foreach ($_POST as $name => $value) {
+            $$name = $value;
+        }
+        $emailcount = User::checkUserExist($email);
+
+        if($emailcount > 0){
+            $userdata = User::getuserbyemail($email);
+            $firstname= $userdata->fullname;
+            $uid = $userdata->uid;
+            $path = URLROOT."/front/pages/resetpassword/".simple_encrypt($uid,'e');
+            $imagepath = URLROOT.'/reg-assets/img/sig.jpg';
+            $confirmationlink = "<a href=".$path.">Passwort zurücksetzen</a>";
+            $subject = 'FDA Password Reset';
+            $emailmessage = "<div style='font-family: Arial; font-size: 13px'><p>Guten Tag,</p> <p>mit Hilfe des nachfolgenden Links kann das Passwort zurückgesetzt werden:</p>".
+                            "<p>".$confirmationlink."</p> <p>Wir freuen uns auf die Bewerbung!</p><p>Freundliche Grüße</p> <p>Das Team von My Mentor</p>
+                            </div>";
+
+            $emailresponse = SendEmail(SENDEREMAIL, $email, $subject, $emailmessage, $firstname, $atttach=false);
+
+            if($emailresponse == 'Success'){
+                $message = ['type'=>'success','message'=>'Link has been sent to your email'];
+                $this->view('pages/forgot', $message);
+            }else{
+                $message = ['type'=>'danger','message'=>$emailresponse];
+                $this->view('pages/forgot', $message);
+            }
+
+        }else{
+            $message = ['type'=>'danger','message'=>'E-Mail does not exist'];
+            $this->view('pages/forgot', $message);
+
+        }
+    }
 }

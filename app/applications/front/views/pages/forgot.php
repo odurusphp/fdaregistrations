@@ -21,36 +21,30 @@ require ("includes/header.php");
             <div class="container">
 
                 <div class="row hero-padd">
-
-
                     <div class="col-md-6 col-xs-12 col-sm-6">
 
                         <div class="hero-text login-container" >
 
-                            <h3 style="color:#fff">Provide Login Credentials</h3>
+                            <h3 style="color:#fff">Provide Email Address</h3>
                              <form method='post'>
+                             <?php
+                                if (isset($data['message'])) {
+                                    ?>
+                                    <div class="alert alert-<?php echo $data['type'] ?>">
+                                    <strong></strong> <?php echo $data['message'] ?>.
+                                    </div>
+                                <?php } ?>
                             <p> 
-                               
                                   <table cellpadding="5">
                                     <tr>
                                         <td><input type='text' name='email' class="form-control" required placeholder="Email"></td>
                                     </tr>
-                                    <tr>
-                                        <td><input type='password' name='password' required class="form-control" placeholder="Password"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a style="color:#fff" href="<?= URLROOT?>/front/pages/forgot">forgot password?</a></td>
-                                    </tr>
+                                  
                                   </table>
-                               
-
                             </p>
 
-                            <button  type='submit' class="btn btn-white">LogIn</button>
-
+                            <button  type='submit' class="btn btn-white">submit</button>
                              </form>
-
-
                         </div>
 
 

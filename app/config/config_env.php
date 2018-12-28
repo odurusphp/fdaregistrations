@@ -10,11 +10,10 @@ define('JSVARS',serialize(array(
 
 define('ROUTE_REQUEST',true);
 
-define('USERNAME', 'postmaster@mg.myfinancecoach.com');
-define('PASSWORD', '0015e89b20ad6cbc5e3961b951595ffd');
-define('MFCEMAIL', 'mymentor@myfinancecoach.org');
-//define('MFCEMAIL', 'cassandra.sarfo@yahoo.com');
-define('MFCSENDEREMAIL', 'volunteering@myfinancecoach.com');
+define('USERNAME', 'yawshadi23@gmail.com');
+define('PASSWORD', 'wonderful123456789');
+define('EMAIL', 'info@fdaghana.gov');
+define('SENDEREMAIL', 'info@fdaghana.gov');
 
 
 

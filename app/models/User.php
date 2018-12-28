@@ -74,7 +74,13 @@ class User extends BaseUser{
         $fdadb->prepare($getuser);
         return $fdadb->singleRecord();
      }
-
+     public static function getuserbyemail($email){
+        global $fdadb;
+        $getrecords = "SELECT users.* from users where users.email = '$email' ";
+        $fdadb->prepare($getrecords);
+        $fdadb->execute();
+        return $fdadb->singleRecord();
+    }
 }
 
 ?>

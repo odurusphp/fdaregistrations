@@ -54,13 +54,9 @@ class Pages extends Controller {
 
         $this->view('pages/login');
     }
-    public function fooddivision(){
+    public function forgot(){
 
-        $this->view('pages/fooddivision');
-    }
-    public function drugdivision(){
-
-        $this->view('pages/drugdivision');
+        $this->view('pages/forgot');
     }
 
     
