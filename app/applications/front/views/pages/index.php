@@ -124,86 +124,104 @@ require ("includes/header.php");
         <!--About-->
 
 
-        <section id="about" class="padd-80">
+        <section id="features" class="padd-80">
 
             <!--container-->
 
             <div class="container">
+
                 <div class="row">
 
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                    <ul class="nav nav-tabs" role="tablist" >
+                    <li class="nav-item" >
+                    <a class="nav-link active" href="#drug" role="tab" data-toggle="tab" >
+                        <div class="row">
+
+                            <div class="col-md-12 col-lg-12 col-xs-12">
+                               
+                                <div class="icon-app">
+
+                                    <div class="icon"><img src="<?= URLROOT?>/front/images/drug.png" alt=""></div>
 
 
-                    <div class="row-centered">
-                        <div class="col-centered col-lg-7">
+                                    <div class="icon-header">
+                                        <h3>Drug Division</h3>
+                                    </div>
 
-                            <h2 class="title-h2">Create a better workplace </h2>
+                                    <div class="icon-content">
+                                        <p style='color:#88889B'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+                                    </div>
 
-                            <p class="font-p mg-bt-60">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                </div>
+                              
 
-                            </p>
 
+                            </div>
                         </div>
+                        </a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="#food" role="tab" data-toggle="tab" >
 
+                        <div class='row'>
+                            <div class="col-md-12 col-lg-12 col-xs-12">
+                                <div class="icon-app mg-bt-0">
 
+                                    <div class="icon"><img src="<?= URLROOT?>/front/images/food.png" alt=""> </div>
+
+                                    <div class="icon-header">
+                                        <h3>Food Division</h3>
+                                    </div>
+
+                                    <div class="icon-content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+                                    </div>
+
+                                </div>
+                              
+
+                            </div>
+                            </div>
+</li>
+</a>
+                        </ul>
+                        
                     </div>
 
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="tab-content">
 
+                    <div role="tabpanel" class="tab-pane  active" id="drug">
+                        <h2 class="title-h2">drug time notifications</h2>
+                        <h3 class="title-h3">Take Control of your funds</h3>
 
-                    <div class="col-md-6 col-lg-6 col-xs-12 text-center">
-
-                        <img src="<?= URLROOT?>/front/images/image2.svg" alt="" class="img-width">
-
-
-                    </div>
-
-                    <div class="col-md-6 col-lg-6 col-xs-12">
-
-                        <div class="icon-block">
-
-                            <div class="icon">
-                                <img src="<?= URLROOT?>/front/images/icon1.svg" alt="">
-                            </div>
-                            <div class="icon-info">
-                                <h3>Mastercard</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium</p>
-                            </div>
-
-                        </div>
-
-                        <div class="icon-block">
-
-                            <div class="icon">
-                                <img src="<?= URLROOT?>/front/images/icon2.svg" alt="">
-                            </div>
-                            <div class="icon-info">
-                                <h3>Customer service</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium</p>
-                            </div>
-
-                        </div>
-
-                        <div class="icon-block mg-bt-mobile">
-
-                            <div class="icon">
-                                <img src="<?= URLROOT?>/front/images/icon3.svg" alt="">
-                            </div>
-                            <div class="icon-info">
-                                <h3>Funds in security</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque laudantium</p>
-                            </div>
-
-                        </div>
-
+                        <p class="font-p">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                        <p class="font-p mg-bt-30">
+                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                       
+                                <a href="#" class="btn btn-color">Get started</a>
 
                     </div>
+                    <div role="tabpanel" class="tab-pane " id="food">
+                        <h2 class="title-h2">food time notifications</h2>
+                        <h3 class="title-h3">Take Control of your funds</h3>
 
+                        <p class="font-p">
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                        <p class="font-p mg-bt-30">
+                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                       
+                                <a href="#" class="btn btn-color">Get started</a>
+
+                    </div>
+                    </div>
+                    </div>
 
 
                 </div>
-
             </div>
-            <!--container-->
 
         </section>
 
