@@ -28,22 +28,22 @@ require ("includes/header.php");
                         <div class="hero-text login-container" >
 
                             <h3 style="color:#fff">Provide Login Credentials</h3>
-                             <form>
+                             <form method='post'>
                             <p> 
                                
                                   <table cellpadding="5">
                                     <tr>
-                                        <td><input type=text class="form-control" placeholder="Username"></td>
+                                        <td><input type='text' name='email' class="form-control" required placeholder="Email"></td>
                                     </tr>
                                     <tr>
-                                        <td><input type=text class="form-control" placeholder="Password"></td>
+                                        <td><input type='password' name='password' required class="form-control" placeholder="Password"></td>
                                     </tr>
                                   </table>
                                
 
                             </p>
 
-                            <a href="#" class="btn btn-white">LogIn</a>
+                            <button  type='submit' class="btn btn-white">LogIn</button>
 
                              </form>
 

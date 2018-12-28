@@ -16,7 +16,7 @@ class BaseUser extends tableDataObject {
      * @throws frameworkError
      */
     public function listRoles(){
-		global $lehrerdb;
+		global $fdadb;
 
 		$thisuid = $this->recordObject->uid;
 
@@ -24,8 +24,8 @@ class BaseUser extends tableDataObject {
 				join user_roles on users.uid = user_roles.users_uid
 			    join roles on user_roles.roles_roleid = roles.roleid
 			    where uid = $thisuid";
-		$lehrerdb->prepare($getroles);
-		$roles = $lehrerdb->resultSet(true);
+		$fdadb->prepare($getroles);
+		$roles = $fdadb->resultSet(true);
 		foreach($roles as $role){
 			$rolesout[] = $role['role'];
 		}
@@ -39,7 +39,7 @@ class BaseUser extends tableDataObject {
      * @throws frameworkError
      */
     public function hasRole($role){
-		global $lehrerdb;
+		global $fdadb;
 
 		$thisuid = $this->recordObject->uid;
 
@@ -55,8 +55,8 @@ class BaseUser extends tableDataObject {
 		} else {
 			$getrole .= " and role='$role'";
 		}
-		$lehrerdb->prepare($getrole);
-		if(count($lehrerdb->resultSet()) >0){
+		$fdadb->prepare($getrole);
+		if(count($fdadb->resultSet()) >0){
 			return true;
 		} else {
 			return false;
@@ -70,10 +70,10 @@ class BaseUser extends tableDataObject {
      * @throws frameworkError
      */
     public function roletype($role){
-		global $lehrerdb;
+		global $fdadb;
 		$getuserrole = "Select roleid from roles where role = '$role' ";
-		$rl = $lehrerdb->prepare($getuserrole);
-		$role = $lehrerdb->fetchColumn();
+		$rl = $fdadb->prepare($getuserrole);
+		$role = $fdadb->fetchColumn();
 		return $role;
 	}
 
@@ -83,12 +83,12 @@ class BaseUser extends tableDataObject {
      * @throws frameworkError
      */
     public function addRole($roletype){
-		global $lehrerdb;
+		global $fdadb;
 		$uid = $this->recordObject->uid;
 		$roleid = $this->roletype($roletype);
 		$query = "INSERT INTO  user_roles  (users_uid, roles_roleid) values ($uid , $roleid) ";
-		$lehrerdb->prepare($query);
-		$lehrerdb->execute();
+		$fdadb->prepare($query);
+		$fdadb->execute();
 	}
 
 
@@ -98,12 +98,12 @@ class BaseUser extends tableDataObject {
      * @throws frameworkError
      */
     public function removeRole($roletype){
-		global $lehrerdb;
+		global $fdadb;
 		$uid = $this->recordObject->uid;
 		$roleid = $this->roletype($roletype);
 		$query = "DELETE from user_roles where users_uid = $uid and roles_roleid = $roleid ";
-		$lehrerdb->prepare($query);
-		$lehrerdb->execute();
+		$fdadb->prepare($query);
+		$fdadb->execute();
 	}
 
     /**
@@ -113,7 +113,7 @@ class BaseUser extends tableDataObject {
      * @throws frameworkError
      */
     public static function getUsersWithRole($role){
-		global $lehrerdb;
+		global $fdadb;
 
 		$getUqry = "select users.*, roles.role from users join
 					user_roles on uid = users_uid join
@@ -122,7 +122,7 @@ class BaseUser extends tableDataObject {
 					  select users_uid from user_roles join roles on roles_roleid = roleid
 					    where role = 'deleted'
 					) order by uid";
-		$lehrerdb->prepare($getUqry);
-		return $lehrerdb->resultSet();
+		$fdadb->prepare($getUqry);
+		return $fdadb->resultSet();
 	}
 }

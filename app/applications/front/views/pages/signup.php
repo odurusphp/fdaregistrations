@@ -29,25 +29,35 @@ require ("includes/header.php");
 
                             <h3 style="color:#fff">Sign Up For an Account</h3>
                              <form method="post">
+                             <?php
+                                if (isset($data['message'])) {
+                                    ?>
+                                    <div class="alert alert-danger">
+                                    <strong>Error!</strong> <?php echo $data['message'] ?>.
+                                    </div>
+                                <?php } ?>
                             <p> 
                                
                                   <table cellpadding="5">
                                   	  <tr>
-                                        <td><input type=text class="form-control" placeholder="Name or Company Name"></td>
+                                        <td><input type='text' class="form-control" name='fullname' required placeholder="Name or Company Name"></td>
                                     </tr>
 
                                     <tr>
-                                        <td><input type=text class="form-control" placeholder="Email Address"></td>
+                                        <td><input type='text' class="form-control" name='email' required placeholder="Email Address"></td>
                                     </tr>
                                     <tr>
-                                        <td><input type=text class="form-control" placeholder="Telephone"></td>
+                                        <td><input type='text' class="form-control" name='telephone' required placeholder="Telephone"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type='password' class="form-control" name='password' required placeholder="Password"></td>
                                     </tr>
                                   </table>
                                
 
                             </p>
 
-                            <button  class="btn btn-white">Create Account</button>
+                            <button  type="submit" class="btn btn-white">Create Account</button>
 
                              </form>
 

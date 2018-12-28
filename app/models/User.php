@@ -1,9 +1,6 @@
 <?php
 
-class User extends tableDataObject{
-
-
-    const TABLENAME = 'users';
+class User extends BaseUser{
 
 
     public static function encryptPassword($value){
@@ -11,15 +8,37 @@ class User extends tableDataObject{
         $password = md5($value);
         return $password;
     }
+    public static function getUserByParam($param, $searchvalue)
+    {
+        $rowbyparam = parent::getRecordByParams(self::TABLENAME, array($param => $searchvalue));
 
-    public static  function getUsers(){
-        global $fdadb;
-        $getrecords = "select * from users";
+        if ((!$rowbyparam) || count($rowbyparam) !== 1) {
+            return false;
+        } else {
+            $userbyparam = new User($rowbyparam->uid);
+            return $userbyparam;
+        }
 
-         $fdadb->prepare($getrecords);
-         $fdadb->execute();
-         return $fdadb->resultSet();
     }
+    public static function getUsers($role){
+    
+            global $fdadb;
+            $getuser = "select users.*, roles.role from users join
+            user_roles on uid = users_uid join
+            roles on roleid = roles_roleid where role = '$role'";
+            $fdadb->prepare($getuser);
+            return $fdadb->resultSet();
+        }
+
+        public static function countUsers($role){
+    
+            global $fdadb;
+            $getuser = "select count(*) as total from users join
+            user_roles on uid = users_uid join
+            roles on roleid = roles_roleid where role = '$role'";
+            $fdadb->prepare($getuser);
+            return $fdadb->fetchColumn();
+        }
 
     public static function checkUserExist($email){
     global $fdadb;
@@ -48,7 +67,7 @@ class User extends tableDataObject{
         return $usercount;
      }
 
-
+    
     public static function login_user_object($email){
        global $fdadb;
         $getuser = "select * from users  where email = '$email' and accesslevel = '2'  ";
