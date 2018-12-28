@@ -1,0 +1,37 @@
+{
+
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "heimrichhannot/popper.js": "1.12.6",
+        "datatables/datatables": "1.10.16",
+        "fortawesome/font-awesome": "4.7.0",
+        "components/jqueryui": "^1.12",
+        "components/jquery": "2.1.4",
+        "twitter/bootstrap": "3.3.5",
+        "hsalazr/jquery-validation": "dev-master",
+        "timhovius/bootstrap-material-design": "dev-master",
+        "grimmlink/jquery-slimscroll": "v1.3.8",
+        "kamihouse/icomoon_free_version": "1.0.0",
+        "fzaninotto/faker": "^1.7",
+        "rohnstock/pickadate": "^3.5",
+        "drmonty/datatables-responsive": "^2.2",
+        "phpmailer/phpmailer": "^v6.0.5",
+        "phpoffice/phpspreadsheet": "1.2.1",
+        "sciactive/pnotify": "^3.2",
+        "nicolaskruchten/pivottable": "^2.20",
+        "mbostock/d3": "^3.5",
+        "summernote/summernote": "^0.5.8",
+        "etdsolutions/sumoselect": "dev-master",
+        "moment/moment": "^2.22",
+        "fullcalendar/fullcalendar": "^3.9",
+        "jonthornton/jquery-timepicker": "^1.11",
+        "itsjavi/bootstrap-colorpicker": "^2.5",
+        "videojs/video.js": "^7.2",
+        "enyo/dropzone": "^5.1",
+        "terminal42/contao-countryselect": "^1.2"
+
+    }
+
+
+}
