@@ -52,3 +52,76 @@
   <script src="<?= URLROOT?>/front/js/respond.min.js"></script>
 <![endif]-->
 </head>
+
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+
+    <!-- Page Preloader -->
+
+    <div id="loading-page">
+        <div id="loading-center-page">
+            <div id="loading-center-absolute">
+
+                <div class="loader"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Page Preloader -->
+
+
+    <!-- Page Content -->
+
+
+    <div class="warpper clearfix">
+
+
+        <!-- Header -->
+
+        <header class="navbar-header">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+
+                    <a class="navbar-brand" href="#"><img src="<?= URLROOT?>/front/images/fda-1.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon  icon_menu"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a data-scroll="" class="nav-link section-scroll" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-scroll="" class="nav-link section-scroll" href="#about-p">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a data-scroll="" class="nav-link section-scroll" href="#features">Registrations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-scroll="" class="nav-link section-scroll" href="#pricing">Renewals</a>
+                            </li>
+                            <li>
+                                <a data-scroll="" href="#testimonials" class="nav-link section-scroll">Contact Us</a>
+                            </li>
+                         
+
+                            <li>
+                                <div class="connect-block">
+                                    <a href="<?php echo URLROOT.'/front/pages/signup'  ?>">Sign Up</a>
+                                    <a href="<?php echo URLROOT.'/front/pages/login'  ?>" class="btn btn-white">Log In</a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+
+
+        </header>

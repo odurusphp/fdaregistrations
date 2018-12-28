@@ -45,51 +45,18 @@ class Pages extends Controller {
         $this->view('pages/index');
     }
 
-    public function shop(){
+    public function signup(){
         
-        $this->view('pages/shop');
+        $this->view('pages/signup');
     }
     
-    public function product(){
-
-        $this->view('pages/product');
-    }
-
-    public function about(){
-
-        $this->view('pages/about');
-    }
-
-    public function contact(){
-
-        $this->view('pages/contact');
-    }
-
-    public function cart(){
-
-        $this->view('pages/cart');
-    }
-
-    public function checkout(){
-
-        $this->view('pages/checkout');
-    }
-
     public function login(){
 
         $this->view('pages/login');
     }
-    public function register(){
 
-        $this->view('pages/register');
-    }
-    public function account(){
+    
+ 
 
-        $this->view('pages/account');
-    }
-
-    public function terms(){
-
-        $this->view('pages/terms-conditions');
-    }
+   
 }
