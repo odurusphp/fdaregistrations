@@ -1,7 +1,14 @@
-<?php 
-require ("includes/header.php");
+<?php
+require "includes/header.php";
 ?>
-
+<style>
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active.active {
+    color: #495057;
+    background-color: #fff;
+    border:none !important;
+    border-color: #fff !important;
+}
+</style>
         <section id="home" class="hero">
             <div class="hero-bg"></div>
 
@@ -29,7 +36,7 @@ require ("includes/header.php");
                     </div>
                     <div class="col-md-6 col-xs-12 col-sm-6">
 
-                        <img src="<?= URLROOT?>/front/images/image1.svg" alt="">
+                        <img src="<?=URLROOT?>/front/images/image1.svg" alt="">
 
 
                     </div>
@@ -60,10 +67,10 @@ require ("includes/header.php");
                         <div class="row">
 
                             <div class="col-md-12 col-lg-12 col-xs-12">
-                               
+
                                 <div class="icon-app">
 
-                                    <div class="icon"><img src="<?= URLROOT?>/front/images/drug.png" alt=""></div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/drug.png" alt=""></div>
 
 
                                     <div class="icon-header">
@@ -71,25 +78,25 @@ require ("includes/header.php");
                                     </div>
 
                                     <div class="icon-content">
-                                        <p style='color:#88889B'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
                                     </div>
 
                                 </div>
-                              
+
 
 
                             </div>
                         </div>
                         </a>
-</li>
-<li class="nav-item">
-<a class="nav-link " href="#food" role="tab" data-toggle="tab" >
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#food" role="tab" data-toggle="tab" >
 
                         <div class='row'>
                             <div class="col-md-12 col-lg-12 col-xs-12">
                                 <div class="icon-app mg-bt-0">
 
-                                    <div class="icon"><img src="<?= URLROOT?>/front/images/food.png" alt=""> </div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/food.png" alt=""> </div>
 
                                     <div class="icon-header">
                                         <h3>Food Division</h3>
@@ -100,40 +107,40 @@ require ("includes/header.php");
                                     </div>
 
                                 </div>
-                              
+
 
                             </div>
                             </div>
-</li>
-</a>
+                            </li>
+                            </a>
                         </ul>
-                        
+
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="tab-content">
 
                     <div role="tabpanel" class="tab-pane  active" id="drug">
-                        <h2 class="title-h2">drug time notifications</h2>
+                        <h2 class="title-h2">Drug Division</h2>
                         <h3 class="title-h3">Take Control of your funds</h3>
 
                         <p class="font-p">
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
                         <p class="font-p mg-bt-30">
                             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                       
+
                                 <a href="#" class="btn btn-color">Get started</a>
 
                     </div>
                     <div role="tabpanel" class="tab-pane " id="food">
-                        <h2 class="title-h2">food time notifications</h2>
+                        <h2 class="title-h2">Food Division</h2>
                         <h3 class="title-h3">Take Control of your funds</h3>
 
                         <p class="font-p">
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
                         <p class="font-p mg-bt-30">
                             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                       
+
                                 <a href="#" class="btn btn-color">Get started</a>
 
                     </div>
@@ -177,7 +184,7 @@ require ("includes/header.php");
 
                     <div class="col-lg-6 col-md-6">
 
-                        <img src="<?= URLROOT?>/front/images/image3.svg" alt="">
+                        <img src="<?=URLROOT?>/front/images/image3.svg" alt="">
                     </div>
                 </div>
 
@@ -204,7 +211,7 @@ require ("includes/header.php");
 
                     <div class="col-lg-6 col-md-6 text-center">
 
-                        <img src="<?= URLROOT?>/front/images/image4.svg" class="img-width" alt="">
+                        <img src="<?=URLROOT?>/front/images/image4.svg" class="img-width" alt="">
 
 
                     </div>
@@ -277,7 +284,7 @@ require ("includes/header.php");
                                     <p class="font-p ">
                                         Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                                     </p>
-                            
+
                             <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
                              </p>
 
@@ -349,7 +356,7 @@ require ("includes/header.php");
                             <div class="col-md-6 col-lg-6 col-xs-12">
                                 <div class="icon-app">
 
-                                    <div class="icon"><img src="<?= URLROOT?>/front/images/monitor.svg" alt=""></div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/monitor.svg" alt=""></div>
 
 
                                     <div class="icon-header">
@@ -368,7 +375,7 @@ require ("includes/header.php");
                             <div class="col-md-6 col-lg-6 col-xs-12">
                                 <div class="icon-app">
 
-                                    <div class="icon"><img src="<?= URLROOT?>/front/images/shopping-cart.svg" alt=""> </div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/shopping-cart.svg" alt=""> </div>
 
                                     <div class="icon-header">
                                         <h3>Shop online</h3>
@@ -385,7 +392,7 @@ require ("includes/header.php");
                             <div class="col-md-6 col-lg-6 col-xs-12">
                                 <div class="icon-app mg-bt-0">
 
-                                    <div class="icon"><img src="<?= URLROOT?>/front/images/card.svg" alt=""> </div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/card.svg" alt=""> </div>
 
                                     <div class="icon-header">
                                         <h3>Credit Card</h3>
@@ -402,7 +409,7 @@ require ("includes/header.php");
                             <div class="col-md-6 col-lg-6 col-xs-12">
                                 <div class="icon-app mg-bt-0">
 
-                                    <div class="icon"><img src="<?= URLROOT?>/front/images/car.svg" alt=""> </div>
+                                    <div class="icon"><img src="<?=URLROOT?>/front/images/car.svg" alt=""> </div>
 
                                     <div class="icon-header">
                                         <h3>Free Delivery</h3>
@@ -433,7 +440,7 @@ require ("includes/header.php");
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
                         <p class="font-p mg-bt-30">
                             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                       
+
                                 <a href="#" class="btn btn-color">Get started</a>
 
                     </div>
@@ -534,7 +541,7 @@ require ("includes/header.php");
 
                                             <div class="table-plan">
 
-                                                <img src="<?= URLROOT?>/front/images/free.svg" alt="">
+                                                <img src="<?=URLROOT?>/front/images/free.svg" alt="">
                                                 <h2 class="plan1">Free</h2>
                                                 <div class="price">
                                                     <div class="num"> 0$</div>
@@ -562,7 +569,7 @@ require ("includes/header.php");
                                                     <div class="overlay-top">
                                                         <p>Most popular</p>
                                                     </div>
-                                                    <img src="<?= URLROOT?>/front/images/business.svg" alt="">
+                                                    <img src="<?=URLROOT?>/front/images/business.svg" alt="">
                                                     <h2 class="plan2">Business</h2>
                                                     <div class="price">
                                                         <div class="num"> 29$</div>
@@ -588,7 +595,7 @@ require ("includes/header.php");
                                         <div class="col-md-4 col-lg-4 col-xs-12">
                                             <div class="table-plan">
 
-                                                <img src="<?= URLROOT?>/front/images/premium.svg" alt="">
+                                                <img src="<?=URLROOT?>/front/images/premium.svg" alt="">
                                                 <h2 class="plan3">Premium</h2>
                                                 <div class="price">
                                                     <div class="num"> 99$</div>
@@ -620,7 +627,7 @@ require ("includes/header.php");
 
                                             <div class="table-plan">
 
-                                                <img src="<?= URLROOT?>/front/images/free.svg" alt="">
+                                                <img src="<?=URLROOT?>/front/images/free.svg" alt="">
                                                 <h2 class="plan1">Personal</h2>
                                                 <div class="price">
                                                     <div class="num"> 20$</div>
@@ -649,7 +656,7 @@ require ("includes/header.php");
                                                     <div class="overlay-top">
                                                         <p>Most popular</p>
                                                     </div>
-                                                    <img src="<?= URLROOT?>/front/images/business.svg" alt="">
+                                                    <img src="<?=URLROOT?>/front/images/business.svg" alt="">
                                                     <h2 class="plan2">Basic</h2>
                                                     <div class="price">
                                                         <div class="num">45$</div>
@@ -676,7 +683,7 @@ require ("includes/header.php");
 
                                             <div class="table-plan">
 
-                                                <img src="<?= URLROOT?>/front/images/premium.svg" alt="">
+                                                <img src="<?=URLROOT?>/front/images/premium.svg" alt="">
                                                 <h2 class="plan3">Professional</h2>
                                                 <div class="price">
                                                     <div class="num">85$</div>
@@ -740,7 +747,7 @@ require ("includes/header.php");
 
                                     <div class="avatar-photo">
 
-                                        <img src="<?= URLROOT?>/front/images/avatar1.jpg" alt="">
+                                        <img src="<?=URLROOT?>/front/images/avatar1.jpg" alt="">
                                         <div class="rating">
                                             <span class="icon_star"></span>
                                             <span class="icon_star"></span>
@@ -777,7 +784,7 @@ require ("includes/header.php");
 
                                     <div class="avatar-photo">
 
-                                        <img src="<?= URLROOT?>/front/images/avatar2.jpg" alt="">
+                                        <img src="<?=URLROOT?>/front/images/avatar2.jpg" alt="">
                                         <div class="rating">
                                             <span class="icon_star"></span>
                                             <span class="icon_star"></span>
@@ -809,7 +816,7 @@ require ("includes/header.php");
                                 <div class="item">
                                     <div class="avatar-photo">
 
-                                        <img src="<?= URLROOT?>/front/images/avatar3.jpg" alt="">
+                                        <img src="<?=URLROOT?>/front/images/avatar3.jpg" alt="">
                                         <div class="rating">
                                             <span class="icon_star"></span>
                                             <span class="icon_star"></span>
@@ -887,7 +894,7 @@ require ("includes/header.php");
                         <div class="blog-holder">
 
                             <div class="img-blog">
-                                <img src="<?= URLROOT?>/front/images/blog1.jpg" alt="">
+                                <img src="<?=URLROOT?>/front/images/blog1.jpg" alt="">
                             </div>
 
 
@@ -923,7 +930,7 @@ require ("includes/header.php");
                         <div class="blog-holder">
 
                             <div class="img-blog">
-                                <img src="<?= URLROOT?>/front/images/blog2.jpg" alt="">
+                                <img src="<?=URLROOT?>/front/images/blog2.jpg" alt="">
                             </div>
 
 
@@ -959,7 +966,7 @@ require ("includes/header.php");
                         <div class="blog-holder">
 
                             <div class="img-blog">
-                                <img src="<?= URLROOT?>/front/images/blog3.jpg" alt="">
+                                <img src="<?=URLROOT?>/front/images/blog3.jpg" alt="">
                             </div>
 
 
@@ -1036,34 +1043,34 @@ require ("includes/header.php");
                         <div class="item">
 
                             <div class="client-item-img ">
-                                <img src="<?= URLROOT?>/front/images/logo1.png" class="img-responsive " alt=" " title=" ">
+                                <img src="<?=URLROOT?>/front/images/logo1.png" class="img-responsive " alt=" " title=" ">
                             </div>
                         </div>
                         <div class="item">
 
                             <div class="client-item-img ">
-                                <img src="<?= URLROOT?>/front/images/logo2.png" class="img-responsive " alt=" " title=" ">
+                                <img src="<?=URLROOT?>/front/images/logo2.png" class="img-responsive " alt=" " title=" ">
                             </div>
                         </div>
 
                         <div class="item">
 
                             <div class="client-item-img">
-                                <img src="<?= URLROOT?>/front/images/logo3.png" class="img-responsive " alt=" " title=" ">
+                                <img src="<?=URLROOT?>/front/images/logo3.png" class="img-responsive " alt=" " title=" ">
                             </div>
                         </div>
 
                         <div class="item">
 
                             <div class="client-item-img">
-                                <img src="<?= URLROOT?>/front/images/logo4.png" class="img-responsive " alt=" " title=" ">
+                                <img src="<?=URLROOT?>/front/images/logo4.png" class="img-responsive " alt=" " title=" ">
                             </div>
                         </div>
 
                         <div class="item">
 
                             <div class="client-item-img">
-                                <img src="<?= URLROOT?>/front/images/logo5.png" class="img-responsive " alt=" " title=" ">
+                                <img src="<?=URLROOT?>/front/images/logo5.png" class="img-responsive " alt=" " title=" ">
                             </div>
                         </div>
 
@@ -1081,8 +1088,8 @@ require ("includes/header.php");
     <!--Footer-->
 
  <?php
-    require("includes/footer.php");
- ?>
+require "includes/footer.php";
+?>
 </body>
 
 
