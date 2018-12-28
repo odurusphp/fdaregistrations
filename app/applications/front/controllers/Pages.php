@@ -38,11 +38,11 @@ class Pages extends Controller {
 
     public function index(){
        
-        $this->view('pages/home');
+        $this->view('pages/index');
     }
     public function home(){
        
-        $this->view('pages/home');
+        $this->view('pages/index');
     }
 
     public function shop(){
