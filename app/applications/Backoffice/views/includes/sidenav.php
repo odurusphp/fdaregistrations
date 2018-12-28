@@ -12,6 +12,7 @@
   <link rel="icon" href="<?php echo URLROOT.'/backoffice/'?>/images/favicon.ico" type="image/x-icon">
   <!-- Vector CSS -->
   <link href="<?php echo URLROOT.'/backoffice/'?>/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="<?php echo URLROOT.'/backoffice/'?>/plugins/jquery.steps/css/jquery.steps.css">
   <!-- simplebar CSS-->
   <link href="<?php echo URLROOT.'/backoffice/'?>plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->

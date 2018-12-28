@@ -1,3 +1,4 @@
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
 <!--Start footer-->
     <footer class="footer">
       <div class="container">
@@ -21,6 +22,10 @@
   <script src="<?php echo URLROOT.'/backoffice/'?>/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
   <script src="<?php echo URLROOT.'/backoffice/'?>/plugins/Chart.js/Chart.min.js"></script>
   <script src="<?php echo URLROOT.'/backoffice/'?>/js/index.js"></script>
+
+  <script src="<?php echo URLROOT.'/backoffice/'?>/plugins/jquery.steps/js/jquery.steps.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="<?php echo URLROOT.'/backoffice/'?>/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+  <script src="<?php echo URLROOT.'/backoffice/'?>/plugins/jquery.steps/js/jquery.wizard-init.js" type="text/javascript"></script>
   
 </body>
 

@@ -2,11 +2,11 @@
 <?php  require ("includes/header.php"); ?>
 
 <div class="clearfix"></div>
-	
+
   <div class="content-wrapper">
     <div class="container-fluid">
 
-	  
+
       <div class="row mt-3">
         <div class="col-12 col-lg-6 col-xl-3">
           <div class="card border-info border-left-sm">
@@ -65,13 +65,13 @@
           </div>
         </div>
       </div><!--End Row-->
-		  
-		  
+
+
       <div class="row">
         <div class="col-12 col-lg-8 col-xl-8">
           <div class="card">
     		   <div class="card-header">
-                    Product Sales 
+                    Product Sales
     				<div class="card-action">
     				 <div class="dropdown">
     				 <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
@@ -92,7 +92,7 @@
                  </div>
           </div>
         </div>
-		
+
         <div class="col-12 col-lg-4 col-xl-4">
           <div class="card">
 		   <div class="card-header">
@@ -119,7 +119,7 @@
             </div>
           </div>
         </div>
-		
+
       </div><!--End Row-->
 
       <div class="row">
@@ -393,18 +393,16 @@
             </div>
         </div>
       </div><!--End Row-->
-	  
+
        <!--End Dashboard Content-->
 
     </div>
     <!-- End container-fluid-->
-    
+
     </div><!--End content-wrapper-->
    <!--Start Back To Top Button-->
-    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+     
 
     <!--End Back To Top Button-->
 
      <?php  require ("includes/footer.php"); ?>
-	
-	
