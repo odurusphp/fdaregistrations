@@ -8,7 +8,7 @@
      <div class="row pt-2 pb-2">
         <div class="col-sm-9">
         <h4 class="page-title"><span style="color: #FEC70C">
-        FOOD HYGIENGE </span> PERMIT </h4>
+        BUSINESS </span> REGISTRATION </h4>
         
      </div>
      
@@ -129,6 +129,7 @@
            <div class="form-group row">
             <label for="input-1" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
+              <input type="hidden" value="<?php echo $data ?>" name='uid' id='euid' />
             <button type="submit" class="btn btn-primary shadow-primary px-5"><i class="icon-next"></i> Continue</button>
             </div>
           </div>

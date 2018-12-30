@@ -21,7 +21,7 @@
         
          <div class="card">
            <div class="card-body">
-           <div class="card-title"><span style="color: #0069D9">Please provide business / establishment  information </span> </div>
+           <div class="card-title"><span style="color: #0069D9">Please provide more business information </span> </div>
            <hr>
             <form method='post'>
            <div class="form-group row">
@@ -45,13 +45,18 @@
            </div>
 
             <div class="form-group row">
-            <label for="input-4" class="col-sm-2 col-form-label">Business Reg. No:</label>
+            <label for="input-4" class="col-sm-2 col-form-label">Registration No:</label>
             <div class="col-sm-10">
             <input type="text" class="form-control" name="regnumber" id="regnumber" placeholder="Business Registration Number">
             </div>
            </div>
 
-         
+          <div class="form-group row">
+            <label for="input-5" class="col-sm-2 col-form-label">Commencement</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" name="dateofcommencement" id="dateofcommencement" placeholder="Pick date of commencement" >
+            </div>
+          </div>
 
           <div class="form-group row">
             <label for="input-5" class="col-sm-2 col-form-label">Telephone</label>
@@ -102,30 +107,6 @@
             </div>
           </div>
 
-
-
-          <div class="form-group row">
-            <label for="input-5" class="col-sm-2 col-form-label">Contact Person</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" name="contactname"  id="contactname" placeholder="Name of contact person">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="input-5" class="col-sm-2 col-form-label">Contact's Telephone</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" name="contacttelephone"  id="contacttelephone" placeholder="Telephone of contact person">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="input-5" class="col-sm-2 col-form-label">Contact's Position</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" name="contactposition"  id="contactposition" placeholder="Postion of contact person">
-            </div>
-          </div>
-
-          
            <div class="form-group row">
             <label for="input-1" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">

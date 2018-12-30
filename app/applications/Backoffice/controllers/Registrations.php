@@ -2,9 +2,17 @@
 
 class Registrations extends Controller{
 
-	public function foodhygiene(){
+	public function businessregistration(){
 
-		$this->view('foodforms/foodhygiene');
+		$uid = $this->loggedInUser->recordObject->uid;
+
+		$this->view('pages/businessregistration', $uid);
+	}
+
+	public function businessdetails ($busid){
+
+		//$this->view('')
+		
 	}
 
 }

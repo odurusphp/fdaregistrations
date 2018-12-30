@@ -17,3 +17,13 @@ function listmethods($classname){
     $reflector = new ReflectionClass($classname);
     return array("reflector" => $reflector, "methods" => $methods);
 }
+
+
+function redirectToBusinessForms($count){
+	if($count == 0){
+		$location = URLROOT.'/backoffice/registrations/businessregistration';
+		header('Location:'. $location );
+		exit;
+	}
+
+}
