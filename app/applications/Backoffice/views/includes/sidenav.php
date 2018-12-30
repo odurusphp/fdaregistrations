@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Rocker - Bootstrap4  Admin Dashboard Template</title>
+  <title>Foods and Drugs Authority</title>
   <!--favicon-->
   <link rel="icon" href="<?php echo URLROOT.'/backoffice/'?>/images/favicon.ico" type="image/x-icon">
   <!-- Vector CSS -->
@@ -15,6 +15,10 @@
   <link rel="stylesheet" type="text/css" href="<?php echo URLROOT.'/backoffice/'?>/plugins/jquery.steps/css/jquery.steps.css">
   <!-- simplebar CSS-->
   <link href="<?php echo URLROOT.'/backoffice/'?>plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+   <link href="<?php echo URLROOT.'/backoffice/'?>plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+    <link href="<?php echo URLROOT.'/backoffice/'?>/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+  <!--Touchspin-->
+  <link href="<?php echo URLROOT.'/backoffice/'?>/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
   <!-- Bootstrap core CSS-->
   <link href="<?php echo URLROOT.'/backoffice/'?>/css/bootstrap.min.css" rel="stylesheet"/>
   <!-- animate CSS-->

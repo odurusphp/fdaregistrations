@@ -1,4 +1,4 @@
-<?php  require ("includes/sidenav.php"); ?>
+<?php  require ("includes/customernav.php"); ?>
 <?php  require ("includes/header.php"); ?>
 
 <div class="clearfix"></div>
