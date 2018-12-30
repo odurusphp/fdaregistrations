@@ -4,14 +4,18 @@ class Pages extends Controller{
 
 
    public function index(){
-   
-    $this->view( 'pages/index');
+	    new Guard($this->loggedInUser,['Regular']);
+	    
+	    $this->view( 'pages/index');
 	}
 
 	public function pickform(){
-       
+
+	   new Guard($this->loggedInUser,['Regular']);
+
        $uid = $this->loggedInUser->recordObject->uid;
        $buscount = Business::getExistingUserBusiness($uid);
+
        redirectToBusinessForms($buscount);
         
 	   $drugdata = Applications::getapplications('drug');
@@ -30,12 +34,10 @@ class Pages extends Controller{
 	}
 
 	public function logout(){
-	  $uid = $_SESSION['uid'];
+     
+     session_destroy();
+	 header('Location:'.URLROOT.'/front/pages/login');
 
-    if(isset($uid)){
-	  session_unset($uid);
-    }
-	  header('Location:'.URLROOT.'/backoffice/pages');
 	}
 
 

@@ -16,7 +16,7 @@ class Guard {
     public function __construct($loggedinuser,$roles) {
 		if($loggedinuser === null || !$loggedinuser->hasRole($roles)){
     //	Core::unauthorized('Access denied (incorrect role)');
-     Redirecting::location('pages/login');
+          Redirecting::location('front/pages/login');
 		}
 	}
 }

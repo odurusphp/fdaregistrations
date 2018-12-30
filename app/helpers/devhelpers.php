@@ -25,5 +25,15 @@ function redirectToBusinessForms($count){
 		header('Location:'. $location );
 		exit;
 	}
+}
 
+function guard($uid = null){
+
+	echo $uid = $this->loggedInUser->recordObject->uid;
+
+	// if(!isset($uid)){
+	// 	$location = URLROOT.'/front/pages/login';
+	// 	header('Location:'. $location );
+	// 	exit;
+	// }
 }

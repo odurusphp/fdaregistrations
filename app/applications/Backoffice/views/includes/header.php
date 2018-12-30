@@ -29,7 +29,7 @@
   </ul>
      
   <ul class="navbar-nav align-items-center right-nav-link">
-   <li> <i class="icon-power"></i> Logout</li>
+   <li> <i class="icon-power"></i> <a href='<?php echo URLROOT.'/backoffice/pages/logout'  ?>'>Logout</li>
   </ul>
 </nav>
 </header>
