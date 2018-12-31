@@ -50,7 +50,7 @@ class Pages extends PostController {
             $user->email = $email;
             $user->password = md5($password);
             $user->dateregistered = date('Y-m-d H:i:s');
-            $user->fullname = $fullname;
+            $user->companyname = $fullname;
             if ($userdata->store()) {
                 $userdata->addRole('Regular');
                 if (!$dologin = new FrameworkSession($post)) {
@@ -89,7 +89,7 @@ class Pages extends PostController {
 
         if($emailcount > 0){
             $userdata = User::getuserbyemail($email);
-            $firstname= $userdata->fullname;
+            $firstname= $userdata->companyname;
             $uid = $userdata->uid;
             $path = URLROOT."/front/pages/resetpassword/".simple_encrypt($uid,'e');
             $imagepath = URLROOT.'/reg-assets/img/sig.jpg';

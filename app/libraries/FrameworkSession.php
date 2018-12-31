@@ -18,7 +18,7 @@ class frameworkSession {
      *
      * @throws frameworkError
      */
-    public function __construct($postdata,$setbase = null){
+    public function __construct($postdata,$setbase = 'front'){
 		$email = $postdata['email'];
 		$password = $postdata['password'];
 
@@ -27,7 +27,7 @@ class frameworkSession {
 				throw new frameworkError("Error creating user session!");
 			}
 		} else {
-			$redirect = new Data();
+			$redirect = new Pages();
 			if(isset($setbase)){
 			    $redirect->basepath = $setbase;
             }

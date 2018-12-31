@@ -9,11 +9,15 @@ class Business extends  tableDataObject{
           global $fdadb;
           $getrecords = "Select count(*) as buscount from business  where uid = '$uid' ";
           $fdadb->prepare($getrecords);
-          $fdadb->execute();
           return $fdadb->fetchColumn();
       }
 
-
+      public static function getUserBusiness($uid){
+          global $fdadb;
+          $getrecords = "SELECT * from business join users on business.uid=users.uid where business.uid = '$uid'";
+          $fdadb->prepare($getrecords);
+          return $fdadb->singleRecord();
+      }
 
 
 }

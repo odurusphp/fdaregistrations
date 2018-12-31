@@ -33,7 +33,32 @@ class Registrations extends PostController{
 
 	}
 
-
+	public function coldstorage(){
+		foreach ($_POST as $name => $value) {
+            $$name = $value;
+        }
+		if($coldid==''){
+			$coldid = null;
+		}
+		$coldstorage = new Coldstorage($coldid);
+		$datarow  =& $coldstorage->recordObject;
+		$datarow->facilityname= $facilityname;
+		$datarow->facilitylocation= $facilitylocation;
+		$datarow->storagecapacity= $storage;
+		$datarow->freezerfacility= $freezerfacility;
+		$datarow->horsepower= $horsepower;
+		$datarow->otherfacilities= $otherfacilities;
+		$datarow->uid= $uid;
+		$coldstorage->store();
+		$business = Business::getUserBusiness($uid);
+		$coldstorage = Coldstorage::getColdStorage($uid);
+		$viewdata = array(
+			'business'=>$business,
+			'coldstorage'=>$coldstorage,
+			'message'=>'success'
+		);
+		$this->view('pages/coldstorage',$viewdata);	
+	}
 
 }
 

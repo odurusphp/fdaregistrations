@@ -14,6 +14,17 @@ class Registrations extends Controller{
 		//$this->view('')
 		
 	}
+	
+	public function coldstorage(){
+		$uid = $this->loggedInUser->recordObject->uid;
+		$business = Business::getUserBusiness($uid);
+		$coldstorage = Coldstorage::getColdStorage($uid);
+		$viewdata = array(
+			'business'=>$business,
+			'coldstorage'=>$coldstorage
+		);
+		$this->view('pages/coldstorage',$viewdata);	
+	  }
 
 }
 
