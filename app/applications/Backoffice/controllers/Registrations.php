@@ -26,6 +26,11 @@ class Registrations extends Controller{
 		$this->view('pages/coldstorage',$viewdata);	
 	  }
 
+	  public function warehouse(){
+		
+		$this->view('pages/warehouse');	
+	  }
+
 }
 
 
